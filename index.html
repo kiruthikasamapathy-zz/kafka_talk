@@ -47,19 +47,16 @@
    </section>
 
    <section class="title">
-    <h1>Problem?</h1>
+    <h1>why another tool?</h1>
     <h3>Why are we here? What are we going to do?</h3>
-    <ul>
-     <li>A queue per consumer</li>
-     <li>Messaging sytem is heavy</li>
-     <li>Consumers at different consumption pace</li>
-     <i>commit log</i>
-    </ul>
-   </section>
-
-   <section class="title">
-    <h1>Existing systems?</h1>
-    <h3>Why are we here? What are we going to do?</h3>
+    <aside class="notes">
+     <ul>
+      <li>A queue per consumer</li>
+      <li>Messaging sytem is heavy</li>
+      <li>Consumers at different consumption pace</li>
+      <i>commit log</i>
+     </ul>
+    </aside>
    </section>
 
    <section>
@@ -150,7 +147,14 @@
      <br> Every record is a key-value pair, key determines the partition
      <br> every record has an offset number - consumer uses this offset to determine its position
      <br> key could be computed randomly/producer might specify the key explicitly
-     <br>
+     <br> Messages are simply byte arrays and the developers can use them to store any object in any format – with String, JSON, and Avro the most common
+    </aside>
+   </section>
+
+   <section>
+    <h2>Topic and Partitions</h2>
+    <img width="800" data-src="images/commit_log.jpg" alt="Kafka overview" style="border:0">
+    <aside class="notes">
     </aside>
    </section>
 
