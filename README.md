@@ -1,6 +1,7 @@
 # Readme
 
-These are the slides for the new version of the microservcies tutorial. This is based on a fork of the Reveal.JS library.
+These are the slides for the Apache Kakfa talk.
+This is based on a fork of the Reveal.JS library.
 
 ## Running the slides
 
@@ -28,4 +29,3 @@ If you want this quick and easy, you can just fire up Chrome and open index.html
 5. Open <http://localhost:8000> to view your presentation
 
    You can change the port by using `grunt serve --port 8001`.
-
