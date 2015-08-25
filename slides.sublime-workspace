@@ -1,0 +1,594 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"boo",
+				"book_pages"
+			],
+			[
+				"da",
+				"publication_date"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"teaser",
+				"teaser_image"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/theme/thoughtworks.css",
+			"settings":
+			{
+				"buffer_size": 6529,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2977,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "intro.html",
+			"settings":
+			{
+				"buffer_size": 15669,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/theme/source/thoughtworks.scss",
+			"settings":
+			{
+				"buffer_size": 1484,
+				"line_ending": "Unix",
+				"name": "/**"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3923,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 702,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/font/open-sans/open-sans.css",
+			"settings":
+			{
+				"buffer_size": 759,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 269.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/samuelnewman/Development/new_ms_tutorial/slides/css",
+		"/Users/samuelnewman/Development/new_ms_tutorial/slides/images"
+	],
+	"file_history":
+	[
+		"/Users/samuelnewman/Development/new_ms_tutorial/slides/intro.html",
+		"/Users/samuelnewman/Development/new_ms_tutorial/slides/index.html",
+		"/Users/samuelnewman/Development/new_ms_tutorial/slides/lib/font/open-sans/License",
+		"/Users/samuelnewman/Development/new_ms_tutorial/slides/LICENSE",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/new-hello/config/config.ru",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/hello-world/config/config.ru",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/hello-world/Dockerfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/new-hello/Dockerfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/new-hello/app/hello_world.rb",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/new-hello/config/sites-enabled.conf",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/hello-world/Dockerfile-old",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/hello-world/Gemfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/new-hello/Gemfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/Gemfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/rakefile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/new-hello/config/sites-enabled",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/apt-cache/Dockerfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/ssd-example/Dockerfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/vagrant_builder/README.md",
+		"/Users/samuelnewman/Development/new_ms_tutorial/vagrant_builder/vagrant-boxes/packer/ubuntu-14.10-server-amd64.json",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/README.md",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/Dockerfile",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/docker-enter.sh",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/config/nginx-sites.conf",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/config/start-server.sh",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/config.ru",
+		"/Users/samuelnewman/Development/new_ms_tutorial/grape_hello_world/app/hello_api.rb",
+		"/Users/samuelnewman/Development/new_ms_tutorial/vagrant_builder/ubuntu-14.10-server-amd64.json",
+		"/Users/samuelnewman/Development/personal-website/source/blog/2015/02/04/building-microservices-release-dates.markdown",
+		"/Users/samuelnewman/Development/personal-website/source/books/index.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/books/building_microservices.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/books/thoughtworks_anthology.html.erb",
+		"/Users/samuelnewman/Development/personal-website/config.rb",
+		"/Users/samuelnewman/Development/personal-website/source/blog/feed.xml.builder",
+		"/Users/samuelnewman/Development/personal-website/source/books.html.erb",
+		"/Users/samuelnewman/Development/personal-website/todo.org",
+		"/Users/samuelnewman/Development/personal-website/data/talks.yml",
+		"/Users/samuelnewman/Development/personal-website/source/layouts/layout.erb",
+		"/Users/samuelnewman/Development/personal-website/source/_book_sidebar.erb",
+		"/Users/samuelnewman/Development/personal-website/source/about.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/blog/2015/01/28/building-microservices-finished.markdown",
+		"/Users/samuelnewman/Development/personal-website/source/blog/2015/01/29/what-about-magpiebrain.markdown",
+		"/Users/samuelnewman/Development/personal-website/source/_header_nav.erb",
+		"/Users/samuelnewman/Development/personal-website/source/blog/2015/01/29/what-about-magpiebrain?.markdown",
+		"/Users/samuelnewman/Development/personal-website/source/layouts/_book_sidebar.erb",
+		"/Users/samuelnewman/Development/personal-website/source/layouts/blog_post_layout.erb",
+		"/Users/samuelnewman/Development/personal-website/source/css/main.css",
+		"/Users/samuelnewman/Development/personal-website/source/layouts/index.erb",
+		"/Users/samuelnewman/Development/personal-website/source/blog/index.html.erb",
+		"/Users/samuelnewman/Development/personal-website/Gemfile",
+		"/Users/samuelnewman/Development/personal-website/source/tag.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/blog/2015/01/23/hello_world.markdown",
+		"/Users/samuelnewman/Development/personal-website/source/blog/2015/01/23/another_test.markdown",
+		"/Users/samuelnewman/Development/personal-website/source/layouts/tag.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/_head.erb",
+		"/Users/samuelnewman/Development/personal-website/source/talks.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/talk.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/_footer.erb",
+		"/Users/samuelnewman/Development/personal-website/Makefile",
+		"/Users/samuelnewman/Development/personal-website/source/book.html.erb",
+		"/Users/samuelnewman/Development/personal-website/build/css/main.css",
+		"/Users/samuelnewman/Development/microservices-book/preface.asciidoc",
+		"/Users/samuelnewman/Development/personal-website/source/index.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/contact.html.erb",
+		"/Users/samuelnewman/Development/personal-website/source/layouts/nosidebar.erb",
+		"/Users/samuelnewman/Development/personal-website/source/layouts/no_sidebar.erb",
+		"/Volumes/WININSTALL/keys.txt",
+		"/Users/samuelnewman/Library/Application Support/Sublime Text 3/Packages/orgmode/messages/install.org",
+		"/Users/samuelnewman/Development/personal-website/data/social.yml"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"INSTALLATION",
+			"font",
+			"Source Sans Pro",
+			"vars",
+			"books",
+			"dotted",
+			"build",
+			"img",
+			"fancybox",
+			"dotted",
+			"dashed",
+			"img",
+			"logo",
+			"cta",
+			"logo",
+			"masthead",
+			"puts",
+			"forthco",
+			"1050",
+			"masthead",
+			"layout",
+			"main-content",
+			"aside",
+			"masthead",
+			".jpg",
+			"dashed",
+			"underline",
+			"mastead",
+			"masthead",
+			"directory"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Open Sans"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/theme/thoughtworks.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6057,
+								6057
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3714.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "intro.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1578,
+								1578
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 538.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/theme/source/thoughtworks.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1355,
+								1355
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/**",
+							"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 492.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								706,
+								706
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/font/open-sans/open-sans.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "slides.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
