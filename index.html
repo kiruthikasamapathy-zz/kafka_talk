@@ -29,9 +29,6 @@
   document.getElementsByTagName('head')[0].appendChild(link);
  </script>
 
- <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -44,11 +41,12 @@
    <section class="title">
     <h1>Apache Kafka</h1>
     <h3>High-throughput messaging system <i>or</i> distributed commit logs?</h3>
+    <aside class="notes">
+     Apache project initially developed by LinkedIn <br>
+    </aside>
    </section>
 
-   <section class="title">
-    <h1>why another tool?</h1>
-    <h3>Why are we here? What are we going to do?</h3>
+   <section class="title" data-background="images/data_background.jpg">
     <aside class="notes">
      <ul>
       <li>A queue per consumer</li>
@@ -56,6 +54,10 @@
       <li>Consumers at different consumption pace</li>
       <i>commit log</i>
      </ul>
+     fire hose of events (100k+/sec)
+     <br> messages/events to be delivered at least once
+     <br> mix of online and batch consumers
+     <br>
     </aside>
    </section>
 
@@ -64,11 +66,10 @@
     <br>
     <ul>
      <li>Explicitly distributed</li>
-     <li>Persistent messages as the common case</li>
      <li>Partitioned</li>
      <li>Replicated</li>
      <li>Dumb pipelines</li>
-     <i>commit log</i>
+     <li>Persistent messages as the common case</li>
     </ul>
     <aside class="notes">
      central commit log
@@ -81,6 +82,21 @@
      <br> State information as what is being consumed is part of consumer and not data pipeline
      <br>
      <br> Prodcers, brokers and consumers run as a logical group with the help of Zookeeper
+     <br>
+    </aside>
+   </section>
+
+   <section>
+    <h2>Decoupled data pipeline</h2>
+    <br>
+    <img width="1400" data-src="images/kafka_overview.jpg" alt="Kafka overview" style="border:0">
+    <aside class="notes">
+     it is a quite simple abstraction
+     <br> Producers send messages to Kafka clusters
+     <br> Kafka cluster holds these messages for specified time
+     <br> Consumers read content from cluster on their own pace
+     <br> producer need not know anything abt downstream pipeline
+     <br>
      <br>
     </aside>
    </section>
@@ -105,23 +121,28 @@
    </section>
 
    <section>
-    <h2>Decoupled data pipeline</h2>
-    <br>
-    <img width="1400" data-src="images/kafka_overview.jpg" alt="Kafka overview" style="border:0">
-    <aside class="notes">
-     it is a quite simple abstraction
-     <br> Producers send messages to Kafka clusters
-     <br> Kafka cluster holds these messages for specified time
-     <br> Consumers read content from cluster on their own pace
-     <br> producer need not know anything abt downstream pipeline
-     <br>
-     <br>
-    </aside>
+    <h2>Brokers</h2>
+    <img width="1000" data-src="images/topics_partitions_overview1.jpg" alt="Kafka overview" style="border:0">
    </section>
 
    <section>
-    <h2>Topic and Partitions</h2>
-    <img width="1000" data-src="images/topics_partitions_overview.jpg" alt="Kafka overview" style="border:0">
+    <h2>Replicated</h2>
+    <img width="1000" data-src="images/topics_partitions_overview2.jpg" alt="Kafka overview" style="border:0">
+   </section>
+
+   <section>
+    <h2>Partition leader</h2>
+    <img width="1000" data-src="images/topics_partitions_overview3.jpg" alt="Kafka overview" style="border:0">
+   </section>
+
+   <section>
+    <h2>Partitioned</h2>
+    <img width="1000" data-src="images/topics_partitions_overview4.jpg" alt="Kafka overview" style="border:0">
+   </section>
+
+   <section>
+    <h2>Overview</h2>
+    <img width="1000" data-src="images/topics_partitions_overview5.jpg" alt="Kafka overview" style="border:0">
     <aside class="notes">
      topic is the virtual category, it is the key abstraction
      <br> Kafka topic is a append-only or write-ahead log
@@ -221,6 +242,34 @@
      <br> and optimizing resource utilization across the system. Because they can be created dynamically,
      <br> we can make our business rules very flexible.
      <br>
+    </aside>
+   </section>
+
+   <section>
+    <h2>Cons?</h2>
+    <br>
+    <ul>
+     <li>Zookeeper</li>
+     <li>Java based clients</li>
+    </ul>
+    <aside class="notes">
+     Kafka will not work without zookeeper - CAP theorem CP system - unless a quorum of nodes are up (2 of 3, or 3 of 5), the whole system is unavailable
+     <br> Kafka 0.8 requires that the client have access to the same ZooKeeper instance as the server
+     <br> Non-java based clients are not as great as Java ones, especially with Kafka 0.8
+     <br>
+    </aside>
+   </section>
+
+   <section>
+    <h2>Eco system</h2>
+    <br>
+    <ul>
+     <li>Strom</li>
+     <li>Cassandra</li>
+    </ul>
+    <aside class="notes">
+     Storm on top of one of these solutions to add computation, filtering, querying, on your streams. <br>
+     Cassandra as a queryable cache <br>
     </aside>
    </section>
 
