@@ -42,22 +42,24 @@
     <h1>Apache Kafka</h1>
     <h3>High-throughput messaging system <i>or</i> distributed commit logs?</h3>
     <aside class="notes">
-     Apache project initially developed by LinkedIn <br>
+     <ul>
+      <li> Apache project initially developed by LinkedIn</li>
+      <li> open sourced in 2011</li>
+     </ul>
     </aside>
    </section>
 
    <section class="title" data-background="images/data_background.jpg">
     <aside class="notes">
      <ul>
-      <li>A queue per consumer</li>
-      <li>Messaging sytem is heavy</li>
-      <li>Consumers at different consumption pace</li>
-      <i>commit log</i>
-     </ul>
-     fire hose of events (100k+/sec)
-     <br> messages/events to be delivered at least once
-     <br> mix of online and batch consumers
-     <br>
+      <li> fire hose of events (100k+/sec) </li>
+      <li> messages/events to be delivered at least once
+       <li> mix of online and batch consumers</li>
+       <li> consumers at different pace</li>
+       <li> Multiple consumers per message, where in a typical message queue you will be forced to use a queue per consumer</li>
+       <li> there by duplicating all the data</li>
+       <li> Heavy message queue affects over all throughput</li>
+       <br>
     </aside>
    </section>
 
@@ -72,17 +74,18 @@
      <li>Persistent messages as the common case</li>
     </ul>
     <aside class="notes">
-     central commit log
-     <br> break apart your entire infrastructure
-     <br> thousands of terrabytes of data
-     <br> millions of requests per second
-     <br>
-     <br> all your systems can dump data into it, why because it is cheap, easy to scale, predictable
-     <br> kafka assumes that producers, brokers and consumers are all spread across multiple machines
-     <br> State information as what is being consumed is part of consumer and not data pipeline
-     <br>
-     <br> Prodcers, brokers and consumers run as a logical group with the help of Zookeeper
-     <br>
+     <ul>
+      <li> central commit log</li>
+      <li> break apart your entire infrastructure</li>
+      <li> thousands of terrabytes of data</li>
+      <li> millions of requests per second</li>
+      <li></li>
+      <li> all your systems can dump data into it, why because it is cheap, easy to scale, predictable</li>
+      <li> kafka assumes that producers, brokers and consumers are all spread across multiple machines</li>
+      <li> State information as what is being consumed is part of consumer and not data pipeline</li>
+      <li></li>
+      <li> Prodcers, brokers and consumers run as a logical group with the help of Zookeeper</li>
+     </ul>
     </aside>
    </section>
 
@@ -91,13 +94,13 @@
     <br>
     <img width="1400" data-src="images/kafka_overview.jpg" alt="Kafka overview" style="border:0">
     <aside class="notes">
-     it is a quite simple abstraction
-     <br> Producers send messages to Kafka clusters
-     <br> Kafka cluster holds these messages for specified time
-     <br> Consumers read content from cluster on their own pace
-     <br> producer need not know anything abt downstream pipeline
-     <br>
-     <br>
+     <ul>
+      <li> it is a quite simple abstraction</li>
+      <li> Producers send messages to Kafka clusters</li>
+      <li> Kafka cluster holds these messages for specified time</li>
+      <li> Consumers read content from cluster on their own pace</li>
+      <li> producer need not know anything abt downstream pipeline</li>
+     </ul>
     </aside>
    </section>
 
@@ -112,11 +115,12 @@
      <li>Broker leader - Broker followers - ISR </li>
     </ul>
     <aside class="notes">
-     leader - current broker in-charge of the partition
-     <br> all producers to the given partition talk to the broker leader
-     <br> replication - broker consumes from leader
-     <br> list of broker replicas - that are upto date with the leader
-     <br>
+     <ul>
+      <li> leader - current broker in-charge of the partition</li>
+      <li> all producers to the given partition talk to the broker leader</li>
+      <li> replication - broker consumes from leader</li>
+      <li> list of broker replicas - that are upto date with the leader</li>
+     </ul>
     </aside>
    </section>
 
@@ -144,15 +148,16 @@
     <h2>Overview</h2>
     <img width="1000" data-src="images/topics_partitions_overview5.jpg" alt="Kafka overview" style="border:0">
     <aside class="notes">
-     topic is the virtual category, it is the key abstraction
-     <br> Kafka topic is a append-only or write-ahead log
-     <br> so ordered is guaranteed at the partition level
-     <br>
-     <br> partitions are log files on the disk
-     <br> Every record is a key-value pair, key determines the partition
-     <br> every record has an offset number - consumer uses this offset to determine its position
-     <br> key could be computed randomly/producer might specify the key explicitly
-     <br>
+     <ul>
+      <li> topic is the virtual category, it is the key abstraction</li>
+      <li> Kafka topic is a append-only or write-ahead log</li>
+      <li> so ordered is guaranteed at the partition level</li>
+      <li></li>
+      <li> partitions are log files on the disk</li>
+      <li> Every record is a key-value pair, key determines the partition</li>
+      <li> every record has an offset number - consumer uses this offset to determine its position</li>
+      <li> key could be computed randomly/producer might specify the key explicitly</li>
+     </ul>
     </aside>
    </section>
 
@@ -160,15 +165,17 @@
     <h2>Topic and Partitions</h2>
     <img width="1000" data-src="images/topics_partitions_detail.jpg" alt="Kafka overview" style="border:0">
     <aside class="notes">
-     topic is the virtual category, it is the key abstraction
-     <br> Kafka topic is a append-only or write-ahead log
-     <br> so ordered is guaranteed at the partition level
-     <br>
-     <br> partitions are log files on the disk
-     <br> Every record is a key-value pair, key determines the partition
-     <br> every record has an offset number - consumer uses this offset to determine its position
-     <br> key could be computed randomly/producer might specify the key explicitly
-     <br> Messages are simply byte arrays and the developers can use them to store any object in any format – with String, JSON, and Avro the most common
+     <ul>
+      <li> topic is the virtual category, it is the key abstraction</li>
+      <li> Kafka topic is a append-only or write-ahead log</li>
+      <li> so ordered is guaranteed at the partition level</li>
+      <li></li>
+      <li> partitions are log files on the disk</li>
+      <li> Every record is a key-value pair, key determines the partition</li>
+      <li> every record has an offset number - consumer uses this offset to determine its position</li>
+      <li> key could be computed randomly/producer might specify the key explicitly</li>
+      <li> Messages are simply byte arrays and the developers can use them to store any object in any format – with String, JSON, and Avro the most common</li>
+     </ul>
     </aside>
    </section>
 
@@ -192,11 +199,12 @@
      </ul>
     </ul>
     <aside class="notes">
-     1. Producers
-     <br> lots of other customization options
-     <br> How is it different from other messaging queues? In a typical messaging system, queue will push messages to consumers and maintain all other associated metadata
-     <br> Here, consumers pull messsages
-     <br>
+     <ul>
+      <li> 1. Producers</li>
+      <li> lots of other customization options</li>
+      <li> How is it different from other messaging queues? In a typical messaging system, queue will push messages to consumers and maintain all other associated metadata</li>
+      <li> Here, consumers pull messsages</li>
+     </ul>
     </aside>
    </section>
 
@@ -213,11 +221,12 @@
      </ul>
     </ul>
     <aside class="notes">
-     Each consumer process belongs to a consumer group
-     <br> each message is delivered to exactly one process within every consumer group
-     <br> In an ideal world, there will be multiple logical consumer groups, each consisting of a cluster of consuming machines
-     <br> In the case of large data that no matter how many consumers a topic has, a message is stored only a single time.
-     <br>
+     <ul>
+      <li> Each consumer process belongs to a consumer group</li>
+      <li> each message is delivered to exactly one process within every consumer group</li>
+      <li> In an ideal world, there will be multiple logical consumer groups, each consisting of a cluster of consuming machines</li>
+      <li> In the case of large data that no matter how many consumers a topic has, a message is stored only a single time.</li>
+     </ul>
     </aside>
    </section>
 
@@ -233,15 +242,16 @@
      <li>Commit logs</li>
     </ul>
     <aside class="notes">
-     no real-time data processing tool is complete without Kafka integration
-     <br> best suited when multiple consumers, as that is what it is best optimized for
-     <br> commit logs - database state capture
-     <br>
-     <br> Because Kafka topics are very cheap from a performance and overhead standpoint,
-     <br> it’s possible for us to create as many queues as we want, scaled to the performance we want
-     <br> and optimizing resource utilization across the system. Because they can be created dynamically,
-     <br> we can make our business rules very flexible.
-     <br>
+     <ul>
+      <li> no real-time data processing tool is complete without Kafka integration</li>
+      <li> best suited when multiple consumers, as that is what it is best optimized for</li>
+      <li> commit logs - database state capture</li>
+      <li></li>
+      <li> Because Kafka topics are very cheap from a performance and overhead standpoint,</li>
+      <li> it’s possible for us to create as many queues as we want, scaled to the performance we want</li>
+      <li> and optimizing resource utilization across the system. Because they can be created dynamically,</li>
+      <li> we can make our business rules very flexible.</li>
+     </ul>
     </aside>
    </section>
 
@@ -253,10 +263,11 @@
      <li>Java based clients</li>
     </ul>
     <aside class="notes">
-     Kafka will not work without zookeeper - CAP theorem CP system - unless a quorum of nodes are up (2 of 3, or 3 of 5), the whole system is unavailable
-     <br> Kafka 0.8 requires that the client have access to the same ZooKeeper instance as the server
-     <br> Non-java based clients are not as great as Java ones, especially with Kafka 0.8
-     <br>
+     <ul>
+      <li> Kafka will not work without zookeeper - CAP theorem CP system - unless a quorum of nodes are up (2 of 3, or 3 of 5), the whole system is unavailable</li>
+      <li> Kafka 0.8 requires that the client have access to the same ZooKeeper instance as the server</li>
+      <li> Non-java based clients are not as great as Java ones, especially with Kafka 0.8</li>
+     </ul>
     </aside>
    </section>
 
@@ -268,8 +279,10 @@
      <li>Cassandra</li>
     </ul>
     <aside class="notes">
-     Storm on top of one of these solutions to add computation, filtering, querying, on your streams. <br>
-     Cassandra as a queryable cache <br>
+     <ul>
+      <li> Storm on top of one of these solutions to add computation, filtering, querying, on your streams.</li>
+      <li> Cassandra as a queryable cache</li>
+     </ul>
     </aside>
    </section>
 
