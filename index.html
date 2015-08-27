@@ -43,8 +43,8 @@
     <h3>High-throughput messaging system <i>or</i> distributed commit logs?</h3>
     <aside class="notes">
      <ul>
-      <li> Apache project initially developed by LinkedIn</li>
-      <li> open sourced in 2011</li>
+      <li> Apache project initially developed by LinkedIn </li>
+      <li> open sourced in 2011 </li>
      </ul>
     </aside>
    </section>
@@ -59,6 +59,7 @@
        <li> Multiple consumers per message, where in a typical message queue you will be forced to use a queue per consumer</li>
        <li> there by duplicating all the data</li>
        <li> Heavy message queue affects over all throughput</li>
+       <li> Mine is a data-driven company; Events like user activities drive the business and events are becoming first class citizens </li>
        <br>
     </aside>
    </section>
@@ -126,27 +127,27 @@
 
    <section>
     <h2>Brokers</h2>
-    <img width="1000" data-src="images/topics_partitions_overview1.jpg" alt="Kafka overview" style="border:0">
+    <img width="900" data-src="images/topics_partitions_overview1.jpg" alt="Kafka overview" style="border:0">
    </section>
 
    <section>
     <h2>Replicated</h2>
-    <img width="1000" data-src="images/topics_partitions_overview2.jpg" alt="Kafka overview" style="border:0">
+    <img width="900" data-src="images/topics_partitions_overview2.jpg" alt="Kafka overview" style="border:0">
    </section>
 
    <section>
     <h2>Partition leader</h2>
-    <img width="1000" data-src="images/topics_partitions_overview3.jpg" alt="Kafka overview" style="border:0">
+    <img width="900" data-src="images/topics_partitions_overview3.jpg" alt="Kafka overview" style="border:0">
    </section>
 
    <section>
     <h2>Partitioned</h2>
-    <img width="1000" data-src="images/topics_partitions_overview4.jpg" alt="Kafka overview" style="border:0">
+    <img width="900" data-src="images/topics_partitions_overview4.jpg" alt="Kafka overview" style="border:0">
    </section>
 
    <section>
     <h2>Overview</h2>
-    <img width="1000" data-src="images/topics_partitions_overview5.jpg" alt="Kafka overview" style="border:0">
+    <img width="800" data-src="images/topics_partitions_overview5.jpg" alt="Kafka overview" style="border:0">
     <aside class="notes">
      <ul>
       <li> topic is the virtual category, it is the key abstraction</li>
@@ -256,17 +257,20 @@
    </section>
 
    <section>
-    <h2>Cons?</h2>
+    <h2>yes/no</h2>
     <br>
-    <ul>
-     <li>Zookeeper</li>
-     <li>Java based clients</li>
-    </ul>
+    <img width="800" data-src="images/pros_cons.jpg" alt="Kafka overview" style="border:0">
     <aside class="notes">
      <ul>
-      <li> Kafka will not work without zookeeper - CAP theorem CP system - unless a quorum of nodes are up (2 of 3, or 3 of 5), the whole system is unavailable</li>
+      <b> pros </b>
+      <li> Handles peak bandwidth - 20Gbps</li>
+      <li> Dynamically configurable - easy to add more brokers/topics/consumers </li>
+      <li> Multiple clients can process data in parallel and its own pace </li>
+      <br>
+      <b> cons </b>
+      <li> <b> zookeeper </b> Kafka will not work without zookeeper - CAP theorem CP system - unless a quorum of nodes are up (2 of 3, or 3 of 5), the whole system is unavailable</li>
       <li> Kafka 0.8 requires that the client have access to the same ZooKeeper instance as the server</li>
-      <li> Non-java based clients are not as great as Java ones, especially with Kafka 0.8</li>
+      <li> <b> Java clients </b> Non-java based clients are not as great as Java ones, especially with Kafka 0.8</li>
      </ul>
     </aside>
    </section>
@@ -274,10 +278,7 @@
    <section>
     <h2>Eco system</h2>
     <br>
-    <ul>
-     <li>Strom</li>
-     <li>Cassandra</li>
-    </ul>
+    <img width="1500" data-src="images/kafka_plus.jpg" alt="Kafka overview" style="border:0">
     <aside class="notes">
      <ul>
       <li> Storm on top of one of these solutions to add computation, filtering, querying, on your streams.</li>
