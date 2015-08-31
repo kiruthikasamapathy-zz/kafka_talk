@@ -43,7 +43,7 @@
     <h3>High-throughput messaging system as a distributed commit log</h3>
     <aside class="notes">
      <ul>
-      <li> which is fast becoming the centre of gravity for data logging </li>
+      <li> publish-subscribe messaging designed as a distributed commit log </li>
      </ul>
     </aside>
    </section>
@@ -223,6 +223,11 @@
     </aside>
    </section>
 
+   <section>
+    <h2>Overview</h2>
+    <img width="800" data-src="images/topics_partitions_overview6.jpg" alt="Kafka overview" style="border:0">
+      </section>
+
    <section data-background="images/usecases_wordcloud.jpg">
     <h2>Where to use?</h2>
     <br>
@@ -244,7 +249,10 @@
       <li> it’s possible for us to create as many queues as we want, scaled to the performance we want</li>
       <li> and optimizing resource utilization across the system. Because they can be created dynamically,</li>
       <li> we can make our business rules very flexible.</li>
-      <li> <b> event sourcing </b> style of application design where state changes are logged as a time-ordered sequence of records </li>
+      <li> <b> event sourcing </b> style of application design where state changes are logged as a time-ordered sequence of records </li> <br>
+
+      <li> which is fast becoming the centre of gravity for data logging </li>
+      <li> all your systems can dump data into it, why because it is cheap and easy to scale and predictable</li>
      </ul>
     </aside>
    </section>
